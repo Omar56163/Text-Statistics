@@ -1,0 +1,16 @@
+<div class="container text-area-container">
+  <div class="left-side">
+    <textarea
+      [(ngModel)]="textAreaContent"
+    ></textarea>
+    <app-show-button (click)="calcStatistics()"></app-show-button>
+  </div>
+  <div class="right-side">
+    <ul>
+      <li>Words Number: <span>140</span></li>
+      <li>Words Number: <span>5</span></li>
+      <li>Words Number: <span>30</span></li>
+      <li>Words Number: <span>1700</span></li>
+    </ul>
+  </div>
+</div>
