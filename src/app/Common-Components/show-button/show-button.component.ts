@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-show-button',
   templateUrl: './show-button.component.html',
-  styleUrls: ['./show-button.component.css']
+  styleUrls: ['./show-button.component.css'],
 })
 export class ShowButtonComponent implements OnInit {
+  @Input() btnText: string;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

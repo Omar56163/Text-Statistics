@@ -1,0 +1,22 @@
+<div class="container toolbar-container">
+  <div class="icons-container">
+    <i class="fas fa-bold" (click)="applyEffect('bold')"></i>
+    <i class="fas fa-italic" (click)="applyEffect('italic')"></i>
+    <i class="fas fa-underline" (click)="applyEffect('underline')"></i>
+    <i class="fas fa-font arrow"></i>
+    <div class="font-options">
+      <ul>
+        <li>UpperCase</li>
+        <li>LowerCase</li>
+        <li>Capitalize</li>
+      </ul>
+    </div>
+  </div>
+  <div class="replace-container">
+    <input type="text" [(ngModel)]="oldText" placeholder="Replace" />
+    <input type="text" [(ngModel)]="newText" placeholder="With" />
+  
+    <app-show-button [btnText]="'Apply Changes'" (click)="applyReplace()"></app-show-button>
+  </div>
+</div>
+

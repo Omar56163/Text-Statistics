@@ -30,9 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.css",
               "src/styles/all.min.css",
-              "src/styles/normalize.css"
+              "src/styles/normalize.css",
+              "src/styles/styles.css"
             ],
             "scripts": []
           },
@@ -99,7 +99,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/all.min.css",
+              "src/styles/normalize.css",
+              "src/styles/styles.css"
             ],
             "scripts": []
           }

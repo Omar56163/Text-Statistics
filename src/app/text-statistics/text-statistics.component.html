@@ -2,15 +2,18 @@
   <div class="left-side">
     <textarea
       [(ngModel)]="textAreaContent" 
+      [ngClass]="applyNewEffect(false,'')"
     ></textarea>
-    <app-show-button (click)="calcStatistics()"></app-show-button>
+    <app-show-button [btnText]="'Show Result'" (click)="calcStatistics()"></app-show-button>
   </div>
   <div class="right-side">
+    
     <ul>
-      <li>Words Number: <span>140</span></li>
-      <li>Words Number: <span>5</span></li>
-      <li>Words Number: <span>30</span></li>
-      <li>Words Number: <span>1700</span></li>
+      <li>Words Number: <span [textContent]="wordsNumber"></span></li>
+      <li>All Chars Number: <span [textContent]="lettersNumber"></span></li>    
+      <li>Alphabet Chars Number: <span [textContent]="alphabetCharsNumber"></span></li>
+      <li>Special Chars Number: <span [textContent]="specialCharsNumber"></span></li>
+      <li>Numbers Number: <span [textContent]="numbersNumber"></span></li>
     </ul>
   </div>
 </div>
